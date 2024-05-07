@@ -1,0 +1,99 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.principal-tittle{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+h2, h3{
+    font-family: 'Alex Brush', cursive;
+    letter-spacing: 1.5px ;
+}
+
+.decoration-text{
+    font-family: 'Alex Brush', cursive;
+    font-size:larger;
+    letter-spacing: 1.5px ;
+    font-size: larger;
+}
+
+.instructions{
+    text-align: center;
+}
+
+.instructions h2, p{
+    display: inline;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-image: url('../icons/icons8-circulo-16.png');
+}
+
+li {
+    font-size: 1.2em;
+    padding: 0.25em;
+    border-bottom: 1px solid;
+    margin-bottom: 0.5em;
+}
+
+li:hover{
+    background-color: lightyellow;
+}
+
+li:focus {
+    background-color: lightcyan;
+}
+
+li[data-completed="true"] {
+    list-style-image: url('../icons/icons8-de-acuerdo-16.png');
+    text-decoration: line-through;
+  }
+
+  .delete-button, .add-task {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.5em;
+  }
+  
+  .add-task{
+    font-size: small;
+  }
+  .delete-button:hover {
+    color: red;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  footer a:hover {
+    color: #0077b5;
+  }
+  
+  footer img {
+    margin-right: 10px;
+  }
