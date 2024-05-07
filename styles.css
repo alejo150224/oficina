@@ -1,0 +1,176 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav {
+    width: 100%;
+    max-width: 1165px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 24px 40px;
+  }
+  
+  ul {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    padding: 0.5rem;
+    position: relative;
+  }
+  
+  .logo {
+    width: 42px;
+    height: 25x;
+  }
+  
+  .menu-icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Media Query for Responsive behavior of the Navbar */
+  @media only screen and (max-width: 600px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  }
+  
+  /* Link and Logo Hover Effects */
+  .link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+  }
+  
+  .link::before {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .link:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .logo {
+    transition: 0.35s ease;
+  }
+  .logo:hover {
+    opacity: 0.5;
+  }
+
+
+body{
+    font-family:fantasy;
+}
+
+.principal-tittle{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+h2, h3{
+    font-family: fantasy;
+    letter-spacing: 1.5px ;
+}
+
+.decoration-text{
+    font-family: fantasy;
+    font-size:larger;
+    letter-spacing: 1.5px ;
+    font-size: larger;
+}
+
+.instructions{
+    text-align: center;
+}
+
+.instructions h2, p{
+    display: inline;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-image: url('../icons/icons8-circulo-16.png');
+}
+
+li {
+    font-size: 1.2em;
+    padding: 0.25em;
+    border-bottom: 1px solid;
+    margin-bottom: 0.5em;
+}
+
+li:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+li:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+li[data-completed="true"] {
+    list-style-image: url('../icons/icons8-de-acuerdo-16.png');
+    text-decoration: line-through;
+  }
+
+  .delete-button, .add-task {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.5em;
+  }
+  
+  .add-task{
+    font-size: small;
+  }
+  .delete-button:hover {
+    color: red;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  footer a:hover {
+    color: #0077b5;
+  }
+  
+  footer img {
+    margin-right: 10px;
+  }
