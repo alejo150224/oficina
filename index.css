@@ -192,3 +192,36 @@ body {
   .dropdown-menu > button:hover {
     opacity: 1;
   }
+
+  /*------------------------IMAGEN PRINCIPAL-------------------------------------------*/ 
+ .contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  
+  }
+  
+  
+  .centrado{
+    position:absolute;
+    top: 34%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family:fantasy;
+    font-size: 112px;
+    background-image: url(images/gradienterojo.avif);   
+    filter: brightness(82%);
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 0px black;
+    
+  }
+  
+  .img{
+    width: 130%;
+    object-fit: cover;
+    aspect-ratio: 21/9;
+    filter: grayscale(100%);
+  }
