@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Su Credito</title>
+</head>
+<body>
+<!----------------------------NAVBAR---------------------->
+    <nav class="navbar">
+        <button onclick="toggleMenu()" class="burger"></button>
+        <button class="button">Inicio</button>
+        <div class="dropdowns">
+          <div class="dropdown">
+            <button class="button">
+              Servicios
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu">
+              <button>Asesoria</button>
+              <button>Avances</button>
+              <button>Creditos</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button">
+              Conocenos
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu">
+              <button>Quienes somos</button>
+              <button>Nuestra Historia</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button">
+              Contactanos
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu">
+              <button>PQRS</button>
+              <button>Oficinas</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button">
+              Ingresa
+            </button>
+          </div>  
+        </div>
+        <a href="#" class="logo_nav"><img class="img_logo" src="images/SUCREDITO.jpg" alt="Logo"></a>
+    </nav>
+      <script>
+        const toggleMenu = () => document.body.classList.toggle("open");
+      </script>
+<!------------------------FIN NAVBAR---------------------->
