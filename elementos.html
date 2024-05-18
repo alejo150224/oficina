@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="styles1.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <button class="button">Home</button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button class="button">
+            Services
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+              </svg>
+          </button>
+          <div class="dropdown-menu">
+            <button>UX/UI Design</button>
+            <button>Web Applications</button>
+            <button>SEO Advice</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Products
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+              </svg>
+          </button>
+          <div class="dropdown-menu">
+            <button>Learn CSS Ebook</button>
+            <button>Security Course</button>
+            <button>Masterclass Bundle</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Support
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 15.375L6 9.375L7.075 8.3L12 13.25L16.925 8.325L18 9.4L12 15.375Z" fill="#F9F9F9"/>
+              </svg>
+          </button>
+          <div class="dropdown-menu">
+            <button>Live Chat</button>
+            <button>Send Email</button>
+            <button>Request Help</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <!--fin navbar-->
+
+    <!--------TARJETA ACOSTADA-------->
+    <div class="bodi_tar_acostada">
+      <div class="card_acos">Hover Me
+        <span>Alejandro Rosero</span>
+      </div>
+    </div>
+    <!--------FIN TARJETA ACOSTADA-------->
+
+    <!-----------TARTA DESENFOQUE-------------->
+    <div class="bodi_card_desenfoque">
+
+      <section class="hero_section">
+        <div class="card_grid">
+      
+          <a class="card_des" href="#">
+            <div class="card___background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+            <div class="card___content">
+              <p class="card___category">Category</p>
+              <h3 class="card___heading"> Card Heading</h3>
+            </div>
+          </a>
+          <a class="card_des" href="#">
+            <div class="card___background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+            <div class="card___content">
+              <p class="card___category">Category</p>
+              <h3 class="card___heading"> Card Heading</h3>
+            </div>
+          </a>
+      
+        <div>
+      </section>
+        </div>
+    <!----------- FIN TARTA DESENFOQUE-------------->
+
+    <!--------TARJETA DE TEXTO HACIA ARRIBA------------>
+    <div class="bodi_card_hacia_arriba">
+      <main class="page-content1">
+        <div class="card_hacia_arriba">
+          <div class="content_up">
+            <h2 class="title_up">Mountain View</h2>
+            <p class="copy_up">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+            <button class="btn_up">View Trips</button>
+          </div>
+        </div>
+        <div class="card_hacia_arriba">
+          <div class="content_up">
+            <h2 class="title_up">To The Beach</h2>
+            <p class="copy_up">Plan your next beach trip with these fabulous destinations</p>
+            <button class="btn_up">View Trips</button>
+          </div>
+        </div>
+        <div class="card_hacia_arriba">
+          <div class="content_up">
+            <h2 class="title_up">Desert Destinations</h2>
+            <p class="copy_up">It's the desert you've always dreamed of</p>
+            <button class="btn_up">Book Now</button>
+          </div>
+        </div>
+        <!--<div class="card_hacia_arriba">
+          <div class="content_up">
+            <h2 class="title_up">Explore The Galaxy</h2>
+            <p class="copy_up">Seriously, straight up, just blast off into outer space today</p>
+            <button class="btn_up">Book Now</button>
+          </div>
+        </div>-->
+      </main>
+    </div> 
+    <!--------FIN TARJETA DE TEXTO HACIA ARRIBA------>
+
+    <!--tarjetas de asesores-->
+    <div class="contenedor1">
+    <div class="card-client">
+      <div class="user-picture">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+          </svg>
+      </div>
+      <p class="name-client"> Jenny Casanova
+          <span>CEO SuCredito
+          </span>
+      </p>
+      <div class="social-media">
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+              </svg>
+              <span class="tooltip-social">Twitter</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+              <span class="tooltip-social">Instagram</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+              </svg>
+              <span class="tooltip-social">Facebook</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+              </svg>
+              <span class="tooltip-social">LinkedIn</span>
+          </a>
+      </div>
+  </div>
+
+    <!--fin card1-->
+    <div class="card-client">
+      <div class="user-picture">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+          </svg>
+      </div>
+      <p class="name-client"> Catalina Salazar
+          <span>Asesora Comercial
+          </span>
+      </p>
+      <div class="social-media">
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+              </svg>
+              <span class="tooltip-social">Twitter</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+              <span class="tooltip-social">Instagram</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+              </svg>
+              <span class="tooltip-social">Facebook</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+              </svg>
+              <span class="tooltip-social">LinkedIn</span>
+          </a>
+      </div>
+  </div>
+    <!--card2--> 
+    <div class="card-client">
+      <div class="user-picture">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+          </svg>
+      </div>
+      <p class="name-client"> Alejandro Rosero
+          <span>Asesor Comercial
+          </span>
+      </p>
+      <div class="social-media">
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+              </svg>
+              <span class="tooltip-social">Twitter</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+              <span class="tooltip-social">Instagram</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+              </svg>
+              <span class="tooltip-social">Facebook</span>
+          </a>
+          <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+              </svg>
+              <span class="tooltip-social">LinkedIn</span>
+          </a>
+      </div>
+  </div>
+    </div>
+    <!--fin tarjetas asesores-->
+    <!--adsfdddddddddddddddddddddddddddddddd-->
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <!--GALERIA DE IMAGENES 1 CAMBIA HACIA UN LADO -->
+    <div class="app">
+      <div class="cardList">
+        <button class="cardList__btn btn btn--left">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </div>
+        </button>
+  
+        <div class="cards__wrapper">
+          <div class="card current--card">
+            <div class="card__image">
+              <img src="https://images.unsplash.com/photo-1642841819300-20ed449c02a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3RhdHVlJTIwb2YlMjB1bml0eXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="" />
+            </div>
+          </div>
+  
+          <div class="card next--card">
+            <div class="card__image">
+              <img src="https://images.unsplash.com/photo-1605111247290-e783c21b4221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGdvYXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="" />
+            </div>
+          </div>
+  
+          <div class="card previous--card">
+            <div class="card__image">
+              <img src="https://images.unsplash.com/photo-1592237887455-982452bbe39f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
+            </div>
+          </div>
+        </div>
+  
+        <button class="cardList__btn btn btn--right">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+  
+      <div class="infoList">
+        <div class="info__wrapper">
+          <div class="info current--info">
+            <h2 class="text name">Statue Of Unity</h2>
+            <h4 class="text location">India</h4>
+            <p class="text description">World's tallest statue</p>
+          </div>
+  
+  
+  
+          <div class="info next--info">
+            <h2 class="text name">Goa</h2>
+            <h4 class="text location">India</h4>
+            <p class="text description">Beaches and places of worship</p>
+          </div>
+  
+  
+  
+          <div class="info previous--info">
+            <h2 class="text name">Arunachal Pradesh</h2>
+            <h4 class="text location">India</h4>
+            <p class="text description">Let your dreams come true</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+    </svg>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+  <script>
+    console.clear();
+
+    const { gsap, imagesLoaded } = window;
+
+    const buttons = {
+      prev: document.querySelector(".btn--left"),
+      next: document.querySelector(".btn--right"),
+    };
+
+    const cardsContainerEl = document.querySelector(".cards__wrapper");
+    const cardInfosContainerEl = document.querySelector(".info__wrapper");
+
+    buttons.next.addEventListener("click", () => swapCards("right"));
+    buttons.prev.addEventListener("click", () => swapCards("left"));
+
+    function swapCards(direction) {
+      const currentCardEl = cardsContainerEl.querySelector(".current--card");
+      const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+      const nextCardEl = cardsContainerEl.querySelector(".next--card");
+
+      changeInfo(direction);
+      swapCardsClass();
+
+      removeCardEvents(currentCardEl);
+
+      function swapCardsClass() {
+        currentCardEl.classList.remove("current--card");
+        previousCardEl.classList.remove("previous--card");
+        nextCardEl.classList.remove("next--card");
+
+        if (direction === "right") {
+          currentCardEl.classList.add("previous--card");
+          previousCardEl.classList.add("next--card");
+          nextCardEl.classList.add("current--card");
+        } else if (direction === "left") {
+          currentCardEl.classList.add("next--card");
+          previousCardEl.classList.add("current--card");
+          nextCardEl.classList.add("previous--card");
+        }
+      }
+    }
+
+    function changeInfo(direction) {
+      let currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+      let previousInfoEl = cardInfosContainerEl.querySelector(".previous--info");
+      let nextInfoEl = cardInfosContainerEl.querySelector(".next--info");
+
+      gsap.timeline()
+        .to([buttons.prev, buttons.next], {
+          duration: 0.2,
+          opacity: 0.5,
+          pointerEvents: "none",
+        })
+        .to(
+          currentInfoEl.querySelectorAll(".text"),
+          {
+            duration: 0.4,
+            stagger: 0.1,
+            translateY: "-120px",
+            opacity: 0,
+          },
+          "-="
+        )
+        .call(() => {
+          swapInfosClass(direction);
+        })
+        .call(() => initCardEvents())
+        .fromTo(
+          direction === "right"
+            ? nextInfoEl.querySelectorAll(".text")
+            : previousInfoEl.querySelectorAll(".text"),
+          {
+            opacity: 0,
+            translateY: "40px",
+          },
+          {
+            duration: 0.4,
+            stagger: 0.1,
+            translateY: "0px",
+            opacity: 1,
+          }
+        )
+        .to([buttons.prev, buttons.next], {
+          duration: 0.2,
+          opacity: 1,
+          pointerEvents: "all",
+        });
+
+      function swapInfosClass() {
+        currentInfoEl.classList.remove("current--info");
+        previousInfoEl.classList.remove("previous--info");
+        nextInfoEl.classList.remove("next--info");
+
+        if (direction === "right") {
+          currentInfoEl.classList.add("previous--info");
+          nextInfoEl.classList.add("current--info");
+          previousInfoEl.classList.add("next--info");
+        } else if (direction === "left") {
+          currentInfoEl.classList.add("next--info");
+          nextInfoEl.classList.add("previous--info");
+          previousInfoEl.classList.add("current--info");
+        }
+      }
+    }
+
+    function updateCard(e) {
+      const card = e.currentTarget;
+      const box = card.getBoundingClientRect();
+      const centerPosition = {
+        x: box.left + box.width / 2,
+        y: box.top + box.height / 2,
+      };
+      let angle = Math.atan2(e.pageX - centerPosition.x, 0) * (35 / Math.PI);
+      gsap.set(card, {
+        "--current-card-rotation-offset": `${angle}deg`,
+      });
+      const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+      gsap.set(currentInfoEl, {
+        rotateY: `${angle}deg`,
+      });
+    }
+
+    function resetCardTransforms(e) {
+      const card = e.currentTarget;
+      const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+      gsap.set(card, {
+        "--current-card-rotation-offset": 0,
+      });
+      gsap.set(currentInfoEl, {
+        rotateY: 0,
+      });
+    }
+
+    function initCardEvents() {
+      const currentCardEl = cardsContainerEl.querySelector(".current--card");
+      currentCardEl.addEventListener("pointermove", updateCard);
+      currentCardEl.addEventListener("pointerout", (e) => {
+        resetCardTransforms(e);
+      });
+    }
+
+    initCardEvents();
+
+    function removeCardEvents(card) {
+      card.removeEventListener("pointermove", updateCard);
+    }
+
+    function init() {
+      let tl = gsap.timeline();
+
+      tl.to(cardsContainerEl.children, {
+        delay: 0.15,
+        duration: 0.5,
+        stagger: {
+          ease: "power4.inOut",
+          from: "right",
+          amount: 0.1,
+        },
+        "--card-translateY-offset": "0%",
+      })
+        .to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+          delay: 0.5,
+          duration: 0.4,
+          stagger: 0.1,
+          opacity: 1,
+          translateY: 0,
+        })
+        .to(
+          [buttons.prev, buttons.next],
+          {
+            duration: 0.4,
+            opacity: 1,
+            pointerEvents: "all",
+          },
+          "-=0.4"
+        );
+    }
+
+    const waitForImages = () => {
+      const images = [...document.querySelectorAll("img")];
+      const totalImages = images.length;
+      let loadedImages = 0;
+      const loaderEl = document.querySelector(".loader span");
+
+      gsap.set(cardsContainerEl.children, {
+        "--card-translateY-offset": "100vh",
+      });
+      gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+        translateY: "40px",
+        opacity: 0,
+      });
+      gsap.set([buttons.prev, buttons.next], {
+        pointerEvents: "none",
+        opacity: "0",
+      });
+
+      images.forEach((image) => {
+        imagesLoaded(image, (instance) => {
+          if (instance.isComplete) {
+            loadedImages++;
+            let loadProgress = loadedImages / totalImages;
+
+            gsap.to(loaderEl, {
+              duration: 1,
+              scaleX: loadProgress,
+              backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
+            });
+
+            if (totalImages == loadedImages) {
+              gsap.timeline()
+                .to(".loading__wrapper", {
+                  duration: 0.8,
+                  opacity: 0,
+                  pointerEvents: "none",
+                })
+                .call(() => init());
+            }
+          }
+        });
+      });
+    };
+
+    waitForImages();
+  </script>
+    <!--FIN GALERIA DE IMAGENES 1 CAMBIA HACIA UN LADO-->
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <BR></BR>
+    <!------CARTA DE FILTROS -->
+    <div class="filter">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" alt="Tropical beach" " title="Photo by Ganapathy Kumar for Unsplash">
+      <figcaption>
+              <div class="caption-title">Sunsets</div>
+              <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam dolore eveniet commodi ut ratione quidem itaque!</div>
+          </figcaption>
+    </figure>
+      <figure>
+      <img src="https://images.unsplash.com/photo-1566371486490-560ded23b5e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="People looking down at the bay" title="Photo by Tron Le for Unsplash">
+      <figcaption>
+              <div class="caption-title">Adventure</div>
+              <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam dolore eveniet commodi ut ratione quidem itaque!</div>
+          </figcaption>
+    </figure>
+      <figure>
+      <img src="https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80" alt="Lounges by the water " title="Photo by Yang Wewe for Unsplash">
+      <figcaption>
+              <div class="caption-title">Relaxation</div>
+              <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam dolore eveniet commodi ut ratione quidem itaque!</div>
+          </figcaption>
+    </figure>
+    </div>
+    
+      <script>
+          const figure = document.querySelectorAll('figure');
+  const caption = document.querySelectorAll('figcaption');
+  const fullCaption = document.querySelectorAll('.caption-full');
+  const figureImage = document.querySelectorAll('figure img');
+  
+  figure.forEach((fig, idx) => {
+      fig.addEventListener('mouseover', () => {
+          caption[idx].classList.add('expanded');
+          fullCaption[idx].classList.add('visible');
+          figureImage[idx].classList.add('image-filter');
+      });
+      
+      fig.addEventListener('mouseout', () => {
+         caption[idx].classList.remove('expanded');
+         fullCaption[idx].classList.remove('visible');
+         figureImage[idx].classList.remove('image-filter');
+      });
+  });
+      </script>
+    <!---FIN CARTA DE FILTROS-->
+    <!---CARD 2-->
+    <div class="bodi">
+      <div class="card-container">
+          <div class="card1">
+              <div class="card-inner1">
+                  <div class="card-front1">
+                      <img src="images/2.png" alt="">
+                  </div>
+                  <div class="card-back1">
+                      <img src="images/2.png" alt="">
+                      <h3>Boat 135G Ultra Sound</h3>
+                      <h1>RS 40,999</h1>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Clone of the card -->
+          <div class="card1">
+              <div class="card-inner1">
+                  <div class="card-front2">
+                      <img src="images/2.png" alt="">
+                  </div>
+                  <div class="card-back2">
+                      <img src="images/2.png" alt="">
+                      <h3>Boat 135G Ultra Sound</h3>
+                      <h1>RS 40,999</h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!---FIN CARD 2-->
+    <!--card 3-->
+    <div class="bodi2">
+      <div class="container2">
+          <div class="card2">
+              <div class="face face1">
+                  <div class="content2">
+                      <div class="icon2">
+                          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                              <path fill-rule="evenodd" d="M 6.40625 16.800781 C 3.152344 20.621094 0 25.234375 0 28.902344 C 0 31.019531 1.78125 33.996094 6.132813 33.996094 C 8.484375 33.996094 10.820313 33.050781 12.648438 32.320313 C 15.730469 31.085938 49.789063 16.296875 49.789063 16.296875 C 50.117188 16.132813 50.058594 15.925781 49.644531 16.027344 C 49.480469 16.070313 12.566406 26.074219 12.566406 26.074219 C 11.855469 26.273438 11.128906 26.382813 10.421875 26.382813 C 7.230469 26.382813 5.078125 24.851563 5.078125 21.503906 C 5.078125 20.207031 5.484375 18.640625 6.40625 16.800781 Z"></path>
+                          </svg>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content2">
+                      <h3 class="h3">
+                          <a href="#" target="_blank">Card</a>
+                      </h3>
+                      <p class="p">This is where I network and build my professional protfolio.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="face face1">
+                  <div class="content2">
+                      <div class="icon2">
+                          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                              <path d="M 24.8125 6.53125 C 20.890625 11.007813 18.839844 18.421875 19.09375 25.75 L 30.5 25.75 C 30.851563 18.273438 28.796875 10.890625 24.8125 6.53125 Z M 0 16.03125 C 0.386719 19.785156 1.167969 22.820313 2.4375 25.75 L 16.3125 25.75 C 12.652344 20.25 7.136719 17.300781 0 16.03125 Z M 50 16.0625 C 42.746094 17.164063 37.148438 20.265625 33.25 25.75 L 47.375 25.75 C 48.703125 22.859375 49.546875 19.730469 50 16.0625 Z M 3.5 28.5625 C 3.878906 29.386719 4.5 30.417969 5.03125 31.15625 L 44.6875 31.125 C 45.265625 30.316406 45.785156 29.484375 46.1875 28.5625 Z M 6.875 33.78125 C 7.695313 34.867188 8.382813 35.308594 9.40625 36.125 L 40.125 36.125 C 40.984375 35.453125 41.886719 34.660156 42.6875 33.78125 Z M 12.6875 38.28125 C 15.308594 39.902344 18.382813 40.964844 21.875 41.6875 L 21.46875 38.28125 Z M 22.3125 38.28125 C 22.988281 39.6875 23.859375 40.867188 24.84375 42 C 25.8125 40.847656 26.441406 39.667969 27.125 38.28125 Z M 28.15625 38.28125 L 27.625 41.5 C 31.132813 40.855469 34.222656 39.835938 36.90625 38.28125 Z"></path>
+                              </svg>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content2">
+                      <h3 class="h3">
+                          <a href="#" target="_blank">Card</a>
+                      </h3>
+                      <p class="p">This is where I read news and network with different social groups.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card2">
+              <div class="face face1">
+                  <div class="content2">
+                      <div class="icon2">
+                          <i class="fa fa-github-square" aria-hidden="true"></i>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEiUlEQVR4nO3aW4hVVRzH8a/OlLfMUotIqams7IIOTUpCYEVEZiF5wYfwRiCKUuiD3TBEMMTywfDSlIWVD1FBloJY6uAlKlCRSMtLD0rqpFI62Fg6zokFf2Fz2PvM3rPXOXvOOb8P7KcDa5/9X7f/uoCIiIiIiIiIiIiIiIiIiIiIiIiIiIgU0h24BRgOPANMB14HVgBfALuAI8A/BUuRUP0tsM8Bc4DFwIfAJmAvcAJoA3IxHwnoAdwFPAZMBRYC7wObgQPAhQSBjXquAD8AbwD17qVbPBSa5mkDvgLqKI1ewDBgAvAa8BGwGzgJtBfpG88BnwPTgJvy/9B3GVdAzh43Hr4KXOMp0IOBMcA8YDWwFThWxCDnP4eA5cATHX1TNxvTXgGagEsZV8QBYHTCYN8JTATesuHiz4x68nar8LvTtJy+wPNAo7WYLCqhHfgYuLlAlvGmffDfGTaWVuBrYAYwkCK5H5gPfAv8W+IP/AuYZQEPGpJh0F2Fr7ce14cScy8cC6wEjpbwo38CHsr7L65iWkr0/vPAB8BTwLV0IW7snWkzfLGDccWGxX6B999qGVSx3rnHvu86ykBP4Elgqf3xYgXllOXoLnm4ahJw2uMQ02iJSVmrC/SOc0WoiCbgvrwVaqOH1t6bClQDNACL7EN95eKXbH8lOBm6vZfjCXrTUlv9VpVBwIu2MeWjd7iE4OlA+W6eeC+iol2+vhEYB9RmGIMu1TsetZacdhx3gb0tULYr91f77Q9r7bdn+K1lsRn2LPBJip7RYqvR2kByUB+ylqgaNwBTLF38BVhjK+1+MSrDbfl+anl40orYD4yiSrnFymTbl/kvIkCXbRfSbSk8YkNRlJ5WaRsKlBe1dnALqAFUCTf+LgGaO7nt8GWMVNAFc66tjuOWfcb2a4Jrh4pyj43bSU6CcgWed2K+d6hVeNy00x0FPkgFudfGaF+BzwEHgREJ/0d323dfF+PUyq0d3s5iI82nPraoSjIed/Tsti2FQnNBHNfbMLavg/edsC2NstLN/vQpj4HfZpNwPrcBtsDydzfELLt6hprASGBtB73CHabfQZlMsE2eT77GRqSfC2zijBqiFibcPnC9YnaBXtFqh+Rdaqs5aIrHDTXXGl+KGGrGJDxn+BF4GbgxwbeMsF7RGlKeWzU/Thcb6z/z2Oqb7AwhrIWuTVGuu1iQ1AA7Bw87dl1vF6syNTjGRBb3uWzHmmF5eAPwe4qy221d0Fm1dkVlR8i5wJystjAetizBR/DPWIoYZnbKc+aLtuL2pd5uuV0MvONdSmyUx+PFnyMuXNXYXZ1ciqc5InvyYaBd2jpkdzpLpsHjZLvTNuLyuW2Gb1KWfdxuRlSUB4CznoK/wa4Aht05+j5l2cciJvKy5gLzm6fgr4s4aeprq920Lb+OCuQr1dwYEfzeHoLfUgk3FcK84Cn4hyPuz9TY9b00ZbdFrJorwvi8tKszz2mbwMOs8lC5i0ock4oxzUPw93q8sl51JqfsXc2WnYmIiIiIiIiIiIiIiIiIiIiIiIiIiIiICJH+B12zLZcrJceLAAAAAElFTkSuQmCC">
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content2">
+                      <h3 class="h3">
+                          <a href="#" target="_blank">Card</a>
+                      </h3>
+                      <p class="p">This is where I share code and work on projects.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!--fin card 3-->
+    <!--card 4-->
+
+    <!--fin card 4-->
+
+    <!--iconos redes sociales-->
+    <div class="icons">
+      <ul class="wrapper">
+        <a href="https:www.facebook.com" target="_blank">
+          <li class="icon facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+             <path d="M24,4C12.972,4,4,12.972,4,24c0,10.006,7.394,18.295,17,19.75V29h-4c-0.552,0-1-0.447-1-1v-3c0-0.553,0.448-1,1-1h4v-3.632	C21,15.617,23.427,13,27.834,13c1.786,0,3.195,0.124,3.254,0.129C31.604,13.175,32,13.607,32,14.125V17.5c0,0.553-0.448,1-1,1h-2	c-1.103,0-2,0.897-2,2V24h4c0.287,0,0.56,0.123,0.75,0.338c0.19,0.216,0.278,0.502,0.243,0.786l-0.375,3	C31.555,28.624,31.129,29,30.625,29H27v14.75c9.606-1.455,17-9.744,17-19.75C44,12.972,35.028,4,24,4z"><a href="https:facebook.com"></a></path>
+              </svg>
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>    
+          </li>
+        </a>  
+        <a href="https://www.twitter.com" target="_blank">
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+             <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+             </svg>
+           <span><i class="fab fa-twitter"></i></span>
+          </li>
+        </a>
+        <a href="https://www.instagram.com/tunombredeusuario" target="_blank">
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+              <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+            </svg>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+        </a>
+        <a href="https://www.instagram.com/tunombredeusuario" target="_blank">
+          <li class="icon youtube">
+            <span class="tooltip">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+              <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
+          </svg>
+           <span><i class="fab fa-youtube"></i></span>
+          </li>
+        </a>  
+      </ul>
+    </div>
+    <!--fin iconos redes sociales-->
+
+    <!--botones animados-->
+    <div class="frame">
+      <div class="buton"><button class="custom-btn btn-3"><span>LIKE</span></button></div>
+      <div class="buton"><button class="custom-btn btn-10">FOLLOW</button></div>
+      <div class="buton"><button class="custom-btn btn-12"><span>SHARE!</span><span>THANKS</span></button></div>
+    </div>
+    <!--fin botones animados-->
+
+    <!--botones animados 2-->
+    <div class="frame1">
+      <div class="buton1"><button class="custom-btn1 btn-5"><span>Button</span></button></div>
+      <div class="buton1"><button class="custom-btn1 btn-9">Button</button></div>
+      <div class="buton1"><button class="custom-btn1 btn-15">Button</button></div>
+     </div>
+    <!--fin botones animados 2-->
+
+    <BR></BR>
+    <BR></BR>
+
+    <!--botones animados 3-->
+    <div class="frame2">
+      <button type="submit" class="btn1 btn-primary btn-ghost">Button</button>
+      <button type="submit" class="btn1 btn-primary btn-ghost">Button</button>
+      <button type="submit" class="btn1 btn-primary btn-ghost">Button</button>
+    </div>
+    <!-- fin botones animados 3-->
+
+    <BR></BR>
+
+    <!--boton animado 4-->
+    <div id="workarea">
+      <div class="position">
+    
+        <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150" />
+            <div id="text">
+              <a href=""><span class="spot"></span>Button</a>
+            </div>
+          </svg>
+        </div>
+        <!--Next button -->
+        <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150" />
+            <div id="text">
+              <a href=""><span class="spot"></span>Button</a>
+            </div>
+          </svg>
+        </div>
+        <!--Next button -->
+        <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150" />
+            <div id="text">
+              <a href=""><span class="spot"></span>Button</a>
+            </div>
+          </svg>
+        </div>
+        <!--End button -->
+      </div>
+    </div>    
+    <!--fin boton animado 4-->
+
+    <BR></BR>
+
+    <!--boton animado 5-->
+    <div class="buton3"><button class="bubbly-button">Click me!</button></div>
+    <script>
+        var animateButton = function(e) {
+
+e.preventDefault;
+//reset animation
+e.target.classList.remove('animate');
+e.target.classList.add('animate');
+setTimeout(function(){
+  e.target.classList.remove('animate');
+},700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+    </script>
+    <!--fin boton animado 5-->
+
+    <!--boton animado 6-->
+    <div class="neonb">
+      <a class="aa" href="#"> 
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+            Neon button
+        </a>
+        <a class="aa" href="#"> 
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+            Neon button
+        </a>
+        <a class="aa" href="#">
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+              <div class="span1"><span></span></div><div class="span1"><span></span></div>
+            Neon button
+        </a>
+    
+  </div>
+    <!--fin boton animado 6-->
+
+    <!--iconos redes sociales 2-->
+    <main>
+          <div class="col">
+            <div class="con">
+              <div class="bar top"></div>
+              <div class="bar middle"></div>
+              <div class="bar bottom"></div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="con">
+              <div class="bar arrow-top"></div>
+              <div class="bar arrow-middle"></div>
+              <div class="bar arrow-bottom"></div>
+            </div>
+          </div>
+        
+          <div class="col">
+           <div class="con">
+            <div class="bar arrow-top-r">
+            </div>
+             <div class="bar arrow-middle-r">
+             </div>
+             <div class="bar arrow-bottom-r">
+             </div>
+           </div>
+          </div>
+        
+          <div class="col">
+           <div class="special-con">
+            <div class="bar arrow-top-fall"></div>
+            <div class="bar arrow-middle-fall"></div>
+            <div class="bar arrow-bottom-fall"></div>
+           </div>
+          </div>
+    
+    </main>
+    <!--fin iconos redes sociales 2-->
+
+  </body>
+</html>
