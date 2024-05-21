@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+  font-family: Poppins;
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.container {
+  --border-radius: 6px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  min-height: 500px;
+  padding: 1.2rem;
+  background: #2b304d;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+form input {
+  width: 78%;
+  padding: 0.5rem;
+  color: white;
+  background-color: #636b97;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-family: inherit;
+  border: 0;
+  outline: none;
+}
+
+form input::placeholder {
+  color: hsl(231, 21%, 75%);
+}
+
+form button {
+  width: 20%;
+  background-color: #eeaa74;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.task {
+  font-weight: 300;
+  color: white;
+  background-color: #636b97;
+  padding: 0.5rem 0.6rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.task .checkbox {
+  width: 1.3em;
+  height: 1.3em;
+  border: 2px solid #eeaa74;
+  border-radius: 50%;
+  outline: none;
+  appearance: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.checkbox::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  background-color: #eeaa74;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 120ms ease-in-out;
+}
+
+.task .checkbox:checked::before {
+  transform: scale(1);
+}
+
+.task.done input[type="checkbox"] + .text {
+  text-decoration: line-through;
+}
+
+.task .delete {
+  padding: 0.5rem 1.2rem;
+  color: white;
+  background-color: hsl(0, 60%, 55%);
+  margin-left: auto;
+}
+    </style>
+    <script>
+        const form = document.querySelector("form");
+const input = document.querySelector("form input");
+const tasksContainer = document.querySelector(".tasks");
+
+let todos = [];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const todo = {
+    text: input.value,
+    checked: false,
+    id: new Date().getTime(),
+  };
+
+  todos.push(todo);
+  // Reset the form
+  e.target.reset();
+
+  displayTodos();
+});
+
+const displayTodos = () => {
+  tasksContainer.innerHTML = "";
+
+  todos.forEach((todo) => {
+    const taskEl = document.createElement("div");
+    const inputEl = document.createElement("input");
+    const textEl = document.createElement("p");
+    const delButton = document.createElement("button");
+
+    taskEl.classList.add("task");
+    inputEl.classList.add("checkbox");
+    delButton.classList.add("delete");
+    textEl.classList.add("text");
+
+    inputEl.type = "checkbox";
+    textEl.innerHTML = todo.text;
+    delButton.innerHTML = "Delete";
+
+    delButton.addEventListener("click", () => {
+      todos = todos.filter((t) => t.id !== todo.id);
+      displayTodos();
+    });
+
+    inputEl.addEventListener("change", (e) => {
+      todo.checked = e.target.checked;
+      console.log(e.target);
+
+      if (todo.checked) {
+        taskEl.classList.add("done");
+      } else {
+        taskEl.classList.remove("done");
+      }
+    });
+
+    taskEl.appendChild(inputEl);
+    taskEl.appendChild(textEl);
+    taskEl.appendChild(delButton);
+    tasksContainer.appendChild(taskEl);
+  });
+};
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Add a Todo...">
+        <button type="submit">+ Add</button>
+      </form>
+
+      <div class="tasks"></div>
+    </div>
+  </body>
+</html>
