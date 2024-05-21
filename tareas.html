@@ -1,83 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="-Una simple lista de tareas- es una aplicación que te permite agregar y editar tareas con un solo clic. Y con dos clics marcar o desmarcar tareas como completadas. En dispositivos móviles, puedes deslizar hacia la derecha para marcar o desmarcar tareas. Sencilla, pero efectiva y fácil de usar">
-    <meta property="og:title" content="Una simple lista de tareas">
-    <meta property="og:description" content="-Una simple lista de tareas- te permite agregar y editar tareas con un solo clic. Y con dos clics marcar o desmarcar tareas como completadas. En dispositivos móviles, puedes deslizar hacia la derecha para marcar o desmarcar tareas. Sencilla, pero efectiva y fácil de usar">
-    <meta property="og:image" content="images/ogImage.png">
-    <meta name="author" content="Stevens Contreras">
-    <meta name="email" content="stevens.contreras@uniminuto.edu.co">
-    <meta name="profile" content="https://github.com/steconpa">
-
-    <link rel="icon" href="icons/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Sans&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normalize.css">
-
-    <title>Una simple lista de tareas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tareas.css">
 </head>
 <body>
-    <!--navbar-->
-    <nav class="bodi">
-        <a href="index.html" class="logo">
-          <img src="images/ogImage.png" align="left" alt="ADMV" width="150%" height="150%">
-        </a>
-        <ul>
-          <li><a href="index.html" class="link">Inicio</a></li>
-          <li><a href="tareas.html" class="link">ventas</a></li>
-          
-        </ul>
-        <button class="menu-icon">
-          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6H20M4 12H20M13 18H20" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-          </svg>
-        </button>
-      </nav>
-    <header role="banner">
-        <h1 class="principal-tittle"><span class="decoration-text">Una simple </span> <br> lista de tareas</h1>
-    </header>
-    <main>
-        <section class="instructions">
-            <h2>Instrucciones:</h2>
-            <p>Un clic para editar, doble clic para marcar o desmarcar como completado. ¡Manos a la obra!</p>
-        </section>
-        <section name="to-do-list-section">
-            <h2>Por hacer:</h2>
-            <ul name="to-do-list">
-                <li data-completed="false" contenteditable>Nueva tarea</li>
-            </ul>
-            <p class="add-task-button"><button class="add-task" name="add-task"><img src="icons/icons8-agregar-icon-16.png" alt="Agregar tarea"> agregar tarea</button></p>
-        </section>
-        <section name="completed-task-section">
-            <h2>Completado:</h2>
-            <ul name="completed-task">
-                
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Elaborado por Stevens Contreras &nbsp;</p> 
-        <p>
-            <a href="https://www.linkedin.com/in/stecop" target="_blank">
-                <img src="icons/icons8-linkedin-96.png" alt="Enlace a mi perfil de LinkedIn"></a>
-            <a href="https://github.com/steconpa" target="_blank">
-                <img src="icons/icons8-github-96.png" alt="Enlace a mi perfil de GitHub"></a></p>
-        <p>Iconos de la página tomados de <a href="https://icons8.com/" target="_blank">Icon8</a></p>
-      </footer>
-
-    <template id="listItem-newTask">
-        <li data-completed="false" contenteditable>Nueva tarea</li>
-    </template>
-    <script src="main.js"></script>
-    <a href="index.html">inicio
-
-    </a>
+    <div class="container">
+        <div class="sidebar">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-list"></i> Todas</button>
+            <button class="filter-btn" data-filter="completed"><i class="fas fa-check-circle"></i> Completadas</button>
+            <button class="filter-btn" data-filter="incomplete"><i class="fas fa-circle"></i> Incompletas</button>
+          </div>
+        </div>
+        <div class="main-content">
+          <h1>Lista de Tareas</h1>
+          <form>
+            <input type="text" id="new-task" placeholder="Ingresa una nueva tarea">
+            <button type="submit" id="add-task"><i class="fas fa-plus"></i></button>
+          </form>
+          <div class="task-stats">
+            <span id="task-count">0</span> tareas pendientes
+          </div>
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+  </div>
+  <script src="tareas.js"></script>
 </body>
 </html>
